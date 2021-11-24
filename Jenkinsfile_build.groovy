@@ -2,8 +2,8 @@
 pipeline{
     agent any
     parameters{
-        string(name: 'BRANCH_NAME', defaultValue : 'master', description: 'give branch name')
-        string(name: 'BUILD_NUMBER', defaultValue : '', description: 'enter build number')
+        string(name: 'BRANCH_NAME', defaultValue: 'master', description: 'give branch name')
+       // string(name: 'BUILD_NUMBER', defaultValue: '', description: 'enter build number')
     }
     stages{
         stage("clone the code"){
