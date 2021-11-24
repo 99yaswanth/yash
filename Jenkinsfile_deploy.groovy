@@ -19,7 +19,7 @@ pipeline{
         stage("copy artifact"){
             steps{
                 println "copying artifacts "
-                sh "ssh -i /tmp/nvirginia.pem ec2-user@${SERVER_IP} "\systemctl status tomcat\""
+               // sh "ssh -i /tmp/nvirginia.pem ec2-user@${SERVER_IP} "\systemctl status tomcat\""
                 sh "scp -i /tmp/nvirginia.pem hello-${BUILD_NUMBER}.war ec2-user@${SERVER_IP}:/tmp/"
             }
         }
