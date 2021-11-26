@@ -14,7 +14,7 @@ pipeline {
 
                 script {
                     if (env.ENVIRONMENT_NAME == 'QA') {
-                        SERVERS = ["172.31.93.44","172.31.85.14"]
+                        SERVERS = ["172.31.26.58","172.31.80.186"]
                     } else if (env.ENVIRONMENT_NAME == 'DEV') {
                         SERVERS = ["1.1.2.1","1.1.2.2","1.1.2.3"]
                     }
